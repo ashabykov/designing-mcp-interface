@@ -15,13 +15,12 @@ from security import validate_repo_path
 
 
 @server.tool(
-    name="analyze_hotspots",
     description=(
         "Identify risky/hotspot files based on change frequency and author "
         "diversity. Returns a non-empty list of {file, authors, changes, risk_score}."
     ),
 )
-def analyze_hotspots_tool(
+def analyze_hotspots(
     repo_path: str,
     days: int = 30,
     branch: str | None = None,
@@ -31,13 +30,12 @@ def analyze_hotspots_tool(
 
 
 @server.tool(
-    name="analyze_commit_patterns",
     description=(
         "Summarize commit patterns (volume, size, authorship) over a time window. "
         "Returns {total_commits, avg_files_per_commit, authors}."
     ),
 )
-def analyze_commit_patterns_tool(
+def analyze_commit_patterns(
     repo_path: str,
     days: int = 30,
     author: str | None = None,
@@ -47,13 +45,12 @@ def analyze_commit_patterns_tool(
 
 
 @server.tool(
-    name="list_recent_deploys",
     description=(
         "Extra tool: return recent (mock) deployment records for cross-referencing "
         "hotspots with production changes."
     ),
 )
-def list_recent_deploys_tool(
+def list_recent_deploys(
     repo_path: str,
     env: str | None = None,
     limit: int = 10,
