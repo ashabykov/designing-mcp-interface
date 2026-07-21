@@ -1,0 +1,153 @@
+# =========================================================
+# Environment variables / secrets
+# =========================================================
+
+.env
+.env.*
+*.env
+*.env.*
+*.secret
+*.secrets
+
+# Keep template/example env files
+!.env.example
+!*.env.example
+
+# =========================================================
+# Python
+# =========================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Packaging / build
+build/
+dist/
+site/
+*.egg
+*.egg-info/
+.eggs/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Type checkers / linters
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================================================
+# Node.js / JavaScript / TypeScript
+# =========================================================
+
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package managers
+.pnpm-store/
+.npm/
+.yarn/
+
+# Framework build folders
+.next/
+.nuxt/
+.svelte-kit/
+.parcel-cache/
+
+# Frontend build output
+coverage/
+dist/
+build/
+
+# =========================================================
+# MCP / AI agent / local runtime files
+# =========================================================
+
+logs/
+*.log
+
+tmp/
+temp/
+
+.cache/
+
+# Local configs / credentials
+config.local.json
+settings.local.json
+credentials.json
+secrets.json
+
+# SQLite / local DBs
+*.db
+*.sqlite
+*.sqlite3
+
+# Runtime / PID files
+*.pid
+
+# =========================================================
+# Docker
+# =========================================================
+
+.docker/
+docker-compose.override.yml
+
+# =========================================================
+# IDE / Editors
+# =========================================================
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+*~
+
+# =========================================================
+# OS files
+# =========================================================
+
+.DS_Store
+Thumbs.db
+
+# =========================================================
+# Terraform / cloud
+# =========================================================
+
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+# =========================================================
+# AWS / Serverless
+# =========================================================
+
+.serverless/
+.aws-sam/
+
+# =========================================================
+# Misc
+# =========================================================
+
+*.bak
+*.tmp
